@@ -1,3 +1,9 @@
-import {firstName, lastName, year} from './greeter';
-console.log(year);
-document.querySelector("#root").innerHTML = firstName + lastName 
+import Vision from '../lib/vision/vision'
+
+   new Vision(
+     <div  class="hello">
+            <section>
+                1111111111111111111111111111111
+                <div>321321321</div>
+            </section>
+     </div>,document.getElementById("app")); 

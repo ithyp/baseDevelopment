@@ -2,7 +2,7 @@
      "presets": [ "es2015" ,"react"],
      "plugins": [
         ["transform-react-jsx", {
-          "pragma": "dom" 
+          "pragma": "Vision.createElement" 
         }]
       ]
 }
