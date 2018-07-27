@@ -14,23 +14,32 @@ import Vision from '../lib/vision/vision'
   }
 
 class EleClass{
-
+    constructor(props){
+            console.log(121232,props );
+            this.a = 1;
+    }
     view(){
         return <table border="1">
                     <tr>
-                        <th>Month</th>
+                        <th>{this.name}</th>
                         <th>Savings</th>
                     </tr>
                     <tr>
-                        <td>January</td>
+                        <td>{this.age}</td>
                         <td>$100</td>
                     </tr>
                 </table>
     }
+    style(){
+        return {
+
+        }
+    }
     options(){
         return {
             props:{
-
+                name:"默认属性",
+                age:1
             },
             data:{
                 
@@ -55,7 +64,7 @@ class EleClass{
            {/* <h1>Hello,World!</h1>
            <Ele></Ele>
            <EleFn a="小白"></EleFn> */}
-           <EleClass></EleClass>
+           <EleClass name="yoopig"  age="15" ></EleClass>
      </section>
 
      , document.getElementById("app")
