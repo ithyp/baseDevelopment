@@ -1,27 +1,25 @@
 import Vision from '../lib/vision/vision'
  
  let Ele = <div>你好，世界!</div>;
-
+let a = "11"
 
 
  function EleFn(props){
-    return (<ul>
-                <li>{props.a}</li>
-                <li>小红</li>
-                <li>小绿</li>
-                <li>小蓝</li>
+    this.num = 123456;
+    return  (<ul>
+                <li>{this.num}</li>
+   
           </ul>)
   }
 
 class EleClass{
     constructor(props){
-            console.log(121232,props );
             this.a = 1;
     }
     view(){
         return <table border="1">
                     <tr>
-                        <th>{this.name}</th>
+                        <th Click={ ()=>{this.setName()}}>{this.name}</th>
                         <th>Savings</th>
                     </tr>
                     <tr>
@@ -42,10 +40,14 @@ class EleClass{
                 age:1
             },
             data:{
-                
+
             },
             methods:{
-
+                setName(){
+                    this.name = "黄--";
+                    this.asdas = ""
+                    console.dir(this)
+                }
             },
             computed:{
 
@@ -60,11 +62,12 @@ class EleClass{
 
    new Vision(
 
-     <section  Click={()=>{ console.log("事件点击")}}>
+     <section >
            {/* <h1>Hello,World!</h1>
            <Ele></Ele>
-           <EleFn a="小白"></EleFn> */}
-           <EleClass name="yoopig"  age="15" ></EleClass>
+           <EleFn a="小白"></EleFn> 
+           <EleClass name="yoopig"  age="15" ></EleClass> */}
+            <EleClass name="yoopig"  age="15" ></EleClass> 
      </section>
 
      , document.getElementById("app")
