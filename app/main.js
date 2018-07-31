@@ -45,6 +45,7 @@ class EleClass{
             methods:{
                 setName(){
                     this.name = "黄--";
+                    this.a = "黄--";
                     this.asdas = ""
                     console.dir(this)
                 }
