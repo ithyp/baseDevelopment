@@ -20,7 +20,7 @@ class EleClass{
         return <table border="1">
                     <tr>
                         <th Click={ ()=>{this.setName()}}>{this.name}</th>
-                        <th>Savings</th>
+                        <th>{this.co}</th>
                     </tr>
                     <tr>
                         <td>{this.age}</td>
@@ -36,18 +36,16 @@ class EleClass{
     options(){
         return {
             props:{
-                name:"默认属性",
+                name:1,
                 age:1
             },
             data:{
-
+                co:1
             },
             methods:{
                 setName(){
-                    this.name = "黄--";
-                    this.a = "黄--";
-                    this.asdas = ""
-                    console.dir(this)
+                   
+                   console.log( this.co++ ,this.age++);
                 }
             },
             computed:{
