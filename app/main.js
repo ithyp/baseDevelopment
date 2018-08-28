@@ -18,6 +18,7 @@ class EleClass{
     }
     view(){
         return <table border="1">
+                   321321321
                     <tr>
                         <th Click={ ()=>{this.setName()}}>{this.name}</th>
                         <th>{this.co}</th>
