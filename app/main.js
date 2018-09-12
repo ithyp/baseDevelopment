@@ -19,6 +19,7 @@ class EleClass{
     view(){
         return <table border="1">
                    321321321
+                   <Ele></Ele>
                     <tr>
                         <th Click={ ()=>{this.setName()}}>{this.name}</th>
                         <th>{this.co}</th>
@@ -26,6 +27,7 @@ class EleClass{
                     <tr>
                         <td>{this.age}</td>
                         <td>$100</td>
+                        <EleFn></EleFn>
                     </tr>
                 </table>
     }
@@ -45,8 +47,7 @@ class EleClass{
             },
             methods:{
                 setName(){
-                   
-                   console.log( this.co++ ,this.age++);
+                   this.name++;
                 }
             },
             computed:{
@@ -67,7 +68,7 @@ class EleClass{
            <Ele></Ele>
            <EleFn a="小白"></EleFn> 
            <EleClass name="yoopig"  age="15" ></EleClass> */}
-            <EleClass name="yoopig"  age="15" ></EleClass> 
+            <EleClass name="123456"  age="15" ></EleClass> 
      </section>
 
      , document.getElementById("app")
