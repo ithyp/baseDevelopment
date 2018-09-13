@@ -21,7 +21,7 @@ class EleClass{
                    321321321
                    <Ele></Ele>
                     <tr>
-                        <th Click={ ()=>{this.setName()}}>{this.name}</th>
+                        <th class="boi" Click={ ()=>{this.setName()}}>{this.name}</th>
                         <th>{this.co}</th>
                     </tr>
                     <tr>
