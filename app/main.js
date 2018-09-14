@@ -4,32 +4,20 @@ import Vision from '../lib/vision/vision'
 let a = "11"
 
 
- function EleFn(props){
-    this.num = 123456;
-    return  (<ul>
-                <li>{this.num}</li>
-   
-          </ul>)
-  }
-
 class EleClass{
     constructor(props){
             this.a = 1;
     }
     view(){
-        return <table border="1">
-                   321321321
-                   <Ele></Ele>
-                    <tr>
-                        <th class="boi" Click={ ()=>{this.setName()}}>{this.name}</th>
-                        <th>{this.co}</th>
-                    </tr>
-                    <tr>
-                        <td>{this.age}</td>
-                        <td>$100</td>
-                        <EleFn></EleFn>
-                    </tr>
-                </table>
+        return <section>
+            <div>
+
+            {this.num}321321
+
+            </div>
+            <span>21321321</span>
+            <button Click={this.setName.bind(this)}>点击事件</button>
+        </section>
     }
     style(){
         return {
@@ -39,15 +27,13 @@ class EleClass{
     options(){
         return {
             props:{
-                name:1,
-                age:1
             },
             data:{
-                co:1
+                num:1
             },
             methods:{
                 setName(){
-                   this.name++;
+                   this.num++;
                 }
             },
             computed:{
@@ -64,6 +50,7 @@ class EleClass{
    new Vision(
 
      <section >
+         <div></div>
            {/* <h1>Hello,World!</h1>
            <Ele></Ele>
            <EleFn a="小白"></EleFn> 
