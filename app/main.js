@@ -9,15 +9,12 @@ class EleClass{
             this.a = 1;
     }
     view(){
-        return <section>
-            <div>
-
-            {this.num}321321
-
-            </div>
-            <span>21321321</span>
-            <button Click={this.setName.bind(this)}>点击事件</button>
-        </section>
+        return <div>
+            <h1>
+             hello world!{this.num}
+            </h1>
+            <button Click={this.setName.bind(this)}>增加</button>
+        </div>
     }
     style(){
         return {
@@ -49,14 +46,8 @@ class EleClass{
 
    new Vision(
 
-     <section >
-         <div></div>
-           {/* <h1>Hello,World!</h1>
-           <Ele></Ele>
-           <EleFn a="小白"></EleFn> 
-           <EleClass name="yoopig"  age="15" ></EleClass> */}
+   
             <EleClass name="123456"  age="15" ></EleClass> 
-     </section>
 
      , document.getElementById("app")
     ); 
